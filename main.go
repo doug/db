@@ -97,6 +97,8 @@ type Settings struct {
 	Socket string
 	// Database charset.
 	Charset string
+	// Context. Leave blank if not using appengine datastore
+	Context interface{}
 }
 
 // Database methods.

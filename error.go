@@ -29,6 +29,7 @@ import (
 
 // Application error messages.
 var (
+	ErrFeatureNotSupported     = errors.New(`This feature is not supported by the current storage.`)
 	ErrExpectingPointer        = errors.New(`Argument must be an address.`)
 	ErrExpectingSlicePointer   = errors.New(`Argument must be a slice address.`)
 	ErrExpectingSliceMapStruct = errors.New(`Argument must be a slice address of maps or structs.`)
